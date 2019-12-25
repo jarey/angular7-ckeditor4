@@ -32,10 +32,13 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/js/ckeditor/plugins/tableselection/styles/tableselection.css"
             ],
             "scripts": [
-              "node_modules/ckeditor4/ckeditor.js"
+              "node_modules/ckeditor4/ckeditor.js",
+              "src/assets/js/ckeditor/plugins/link/dialogs/link.js",
+              "src/assets/js/ckeditor/plugins/table/dialogs/table.js"
             ],
             "es5BrowserSupport": true
           },
