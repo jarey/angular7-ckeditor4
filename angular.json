@@ -37,8 +37,9 @@
             ],
             "scripts": [
               "node_modules/ckeditor4/ckeditor.js",
-              "src/assets/js/ckeditor/plugins/link/dialogs/link.js",
-              "src/assets/js/ckeditor/plugins/table/dialogs/table.js"
+              "node_modules/ckeditor4/plugins/link/dialogs/link.js",
+              "node_modules/ckeditor4/plugins/table/dialogs/table.js",
+              "src/assets/js/ckeditor/plugins/tabletools/dialogs/tableCell.js"
             ],
             "es5BrowserSupport": true
           },

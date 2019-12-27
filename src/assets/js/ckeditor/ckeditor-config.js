@@ -60,8 +60,8 @@ CKEDITOR.editorConfig = function( config ) {
     CKEDITOR.basePath = '/assets/js/ckeditor/';
 	config.language = 'gl';
     config.height = 286;
-    config.skin = 'office2013';
-    CKEDITOR.plugins.addExternal('office2013', 'skins/office2013/','skins/office2013/icons', 'skin.js');
+    //config.skin = 'office2013';
+    //CKEDITOR.plugins.addExternal('office2013', 'skins/office2013/','skins/office2013/icons', 'skin.js');
 
     
     config.placeholder_select= {
