@@ -5,7 +5,7 @@ import {
   ChangeDetectorRef,
 } from '@angular/core';
 import { CKINPUT } from './mock-ckeditorData';
-import {CkeditorConfigService} from '../services/internal/ckeditor-config.service';
+import { CkeditorConfigService } from '../services/internal/ckeditor-config.service';
 declare var CKEDITOR: any;
 
 @Component({
@@ -71,7 +71,7 @@ export class CkeditorToolComponent implements OnInit {
   public myCkeditorConfig: any;
   public ckeditorContent;
   public editor;
-  constructor(private cd: ChangeDetectorRef, private ckService: CkeditorConfigService) { 
+  constructor(private cd: ChangeDetectorRef, private ckService: CkeditorConfigService) {
   }
 
   ngOnInit() {
@@ -85,18 +85,18 @@ export class CkeditorToolComponent implements OnInit {
 
   public onReady(event) {
 
-    CKEDITOR.on( 'currentInstance', function() {
+    CKEDITOR.on('currentInstance', function () {
       this.editor = CKEDITOR.currentInstance;
-  } );
+    });
 
-      CKEDITOR.on('instanceReady' , () => {
-        console.log('Instance Ready');
+    CKEDITOR.on('instanceReady', () => {
+      console.log('Instance Ready');
 
-      });
+    });
 
-      CKEDITOR.on('loaded' , () => {
-        console.log('Loaded Ready');
-      });
+    CKEDITOR.on('loaded', () => {
+      console.log('Loaded Ready');
+    });
 
   }
 }
