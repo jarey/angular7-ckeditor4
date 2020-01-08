@@ -33,13 +33,15 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/js/ckeditor/plugins/tableselection/styles/tableselection.css"
+              "node_modules/ckeditor4/contents.css",
+              "node_modules/ckeditor4/plugins/tableselection/styles/tableselection.css",
+              "node_modules/ckeditor4/plugins/copyformatting/styles/copyformatting.css"
             ],
             "scripts": [
               "node_modules/ckeditor4/ckeditor.js",
               "node_modules/ckeditor4/plugins/link/dialogs/link.js",
               "node_modules/ckeditor4/plugins/table/dialogs/table.js",
-              "src/assets/js/ckeditor/plugins/tabletools/dialogs/tableCell.js"
+              "node_modules/ckeditor4/plugins/tabletools/dialogs/tableCell.js"
             ],
             "es5BrowserSupport": true
           },
